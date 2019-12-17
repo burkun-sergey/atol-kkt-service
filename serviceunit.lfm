@@ -1,0 +1,19 @@
+object AtolKKTService: TAtolKKTService
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
+  OldCreateOrder = False
+  OnStart = DataModuleStart
+  OnStop = DataModuleStop
+  OnContinue = DataModuleContinue
+  OnExecute = DataModuleExecute
+  Height = 150
+  HorizontalOffset = 320
+  VerticalOffset = 130
+  Width = 150
+  PPI = 96
+  object ApplicationProperties1: TApplicationProperties
+    OnException = ApplicationProperties1Exception
+    left = 64
+    top = 24
+  end
+end

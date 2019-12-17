@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="24">
+      <Unit0>
+        <Filename Value="AtolKktService.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="10"/>
+        <CursorPos X="31" Y="8"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="daemonmapperunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DaemonMapper1"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="2"/>
+        <CursorPos X="10" Y="19"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="serviceunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AtolKKTService"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="8"/>
+        <CursorPos X="12" Y="12"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="typesunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TypesUnit"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="132"/>
+        <CursorPos X="46" Y="148"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PipeCommThreadUnit"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="33" Y="11"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="atolkktunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AtolKKTUnit"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="29"/>
+        <CursorPos X="3" Y="45"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="segmentarrayunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SegmentArrayUnit"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="55" Y="3"/>
+        <UsageCount Value="48"/>
+        <Loaded Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="loggerunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LoggerUnit"/>
+        <EditorIndex Value="9"/>
+        <CursorPos X="25" Y="3"/>
+        <UsageCount Value="45"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="requestunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="RequestUnit"/>
+        <TopLine Value="135"/>
+        <CursorPos X="3" Y="227"/>
+        <UsageCount Value="39"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="responseunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ResponseUnit"/>
+        <EditorIndex Value="6"/>
+        <CursorPos X="47" Y="3"/>
+        <UsageCount Value="38"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="readme.txt"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="64"/>
+        <CursorPos X="84" Y="44"/>
+        <UsageCount Value="34"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="devicelistunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DeviceListUnit"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="61"/>
+        <CursorPos X="16" Y="71"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="deviceunit.pas"/>
+        <UnitName Value="DeviceUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="392"/>
+        <CursorPos X="17" Y="407"/>
+        <UsageCount Value="36"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\fcl-extra\src\daemonapp.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="54"/>
+        <CursorPos X="14" Y="69"/>
+        <UsageCount Value="7"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\rtl\objpas\sysutils\sysutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="4" Y="37"/>
+        <UsageCount Value="7"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\rtl-objpas\src\inc\dateutil.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="288"/>
+        <CursorPos X="10" Y="304"/>
+        <UsageCount Value="7"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\fcl-base\src\custapp.pp"/>
+        <UnitName Value="CustApp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="88"/>
+        <CursorPos X="57" Y="336"/>
+        <UsageCount Value="7"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\winunits-base\src\comobj.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1846"/>
+        <CursorPos X="9" Y="1871"/>
+        <UsageCount Value="7"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\winunits-base\src\activex.pp"/>
+        <UnitName Value="ActiveX"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="13"/>
+        <UsageCount Value="7"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\fcl-base\src\syncobjs.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos X="4" Y="42"/>
+        <UsageCount Value="7"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\fcl-base\src\eventlog.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="55"/>
+        <CursorPos X="3" Y="30"/>
+        <UsageCount Value="7"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\JsonTest\unit1.pas"/>
+        <UnitName Value="Unit1"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="20" Y="36"/>
+        <UsageCount Value="7"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\rtl\inc\ustringh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="120"/>
+        <CursorPos X="10" Y="136"/>
+        <UsageCount Value="7"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="..\..\JsonTools\jsontools.pas"/>
+        <UnitName Value="JsonTools"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="132"/>
+        <CursorPos X="14" Y="146"/>
+        <UsageCount Value="7"/>
+      </Unit23>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="atolkktunit.pas"/>
+        <Caret Line="118" Column="15" TopLine="102"/>
+      </Position1>
+      <Position2>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="62" Column="22" TopLine="45"/>
+      </Position2>
+      <Position3>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="283" Column="3" TopLine="280"/>
+      </Position3>
+      <Position4>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="292" Column="18" TopLine="280"/>
+      </Position4>
+      <Position5>
+        <Filename Value="requestunit.pas"/>
+        <Caret Line="16" Column="20"/>
+      </Position5>
+      <Position6>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="66" Column="22" TopLine="44"/>
+      </Position6>
+      <Position7>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="334" Column="3" TopLine="324"/>
+      </Position7>
+      <Position8>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="344" Column="133" TopLine="324"/>
+      </Position8>
+      <Position9>
+        <Filename Value="requestunit.pas"/>
+        <Caret Line="50" Column="4" TopLine="186"/>
+      </Position9>
+      <Position10>
+        <Filename Value="requestunit.pas"/>
+        <Caret Line="27" Column="20" TopLine="11"/>
+      </Position10>
+      <Position11>
+        <Filename Value="devicelistunit.pas"/>
+        <Caret Line="24" Column="37" TopLine="7"/>
+      </Position11>
+      <Position12>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="29" TopLine="10"/>
+      </Position12>
+      <Position13>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="100" Column="33" TopLine="85"/>
+      </Position13>
+      <Position14>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="139" Column="29" TopLine="115"/>
+      </Position14>
+      <Position15>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="108" Column="13" TopLine="178"/>
+      </Position15>
+      <Position16>
+        <Filename Value="devicelistunit.pas"/>
+        <Caret Line="25" Column="20" TopLine="9"/>
+      </Position16>
+      <Position17>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="134" Column="39" TopLine="122"/>
+      </Position17>
+      <Position18>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="231" Column="42" TopLine="218"/>
+      </Position18>
+      <Position19>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="57" Column="36" TopLine="43"/>
+      </Position19>
+      <Position20>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="96" Column="24" TopLine="85"/>
+      </Position20>
+      <Position21>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="231" Column="42" TopLine="222"/>
+      </Position21>
+      <Position22>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="57" Column="36" TopLine="43"/>
+      </Position22>
+      <Position23>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="96" Column="24" TopLine="85"/>
+      </Position23>
+      <Position24>
+        <Filename Value="devicelistunit.pas"/>
+        <Caret Line="25" Column="43" TopLine="6"/>
+      </Position24>
+      <Position25>
+        <Filename Value="devicelistunit.pas"/>
+        <Caret Line="71" Column="16" TopLine="61"/>
+      </Position25>
+      <Position26>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="57" TopLine="43"/>
+      </Position26>
+      <Position27>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="237" Column="38" TopLine="388"/>
+      </Position27>
+      <Position28>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="55" Column="15" TopLine="41"/>
+      </Position28>
+      <Position29>
+        <Filename Value="segmentarrayunit.pas"/>
+        <Caret Line="3" Column="101"/>
+      </Position29>
+      <Position30>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <Caret Line="11" Column="33"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>

@@ -1,0 +1,18 @@
+object DaemonMapper1: TDaemonMapper1
+  DaemonDefs = <  
+    item
+      DaemonClassName = 'TAtolKKTService'
+      Description = 'Atol KKT Service'
+      DisplayName = 'Atol KKT Service'
+      Options = [doAllowStop, doAllowPause]
+      WinBindings.Dependencies = <>
+      WinBindings.StartType = stBoot
+      WinBindings.WaitHint = 0
+      WinBindings.IDTag = 0
+      WinBindings.ServiceType = stWin32
+      WinBindings.ErrorSeverity = esIgnore
+      LogStatusReport = False
+    end>
+  left = 320
+  top = 130
+end

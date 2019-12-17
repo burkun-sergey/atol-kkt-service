@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="10"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="Daemon application"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="LazDaemon"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="FCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="11">
+      <Unit0>
+        <Filename Value="AtolKktService.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="daemonmapperunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DaemonMapper1"/>
+        <HasResources Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="serviceunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AtolKKTService"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="typesunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="TypesUnit"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="pipecommthreadunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PipeCommThreadUnit"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="atolkktunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="AtolKKTUnit"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="segmentarrayunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="SegmentArrayUnit"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="loggerunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LoggerUnit"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="requestunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="RequestUnit"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="responseunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ResponseUnit"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="devicelistunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="DeviceListUnit"/>
+      </Unit10>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="AtolKktService"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="..\..\JsonTools"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
