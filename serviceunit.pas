@@ -8,7 +8,7 @@ unit serviceunit;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, DaemonApp, PipeCommThreadUnit, syncobjs,
+  Classes, SysUtils, FileUtil, Forms, DaemonApp, PipeCommThreadUnit,
   IniFiles, AtolKKTUnit, LoggerUnit;
 
 const
@@ -24,15 +24,11 @@ type
     procedure DataModuleContinue(Sender: TCustomDaemon; var OK: Boolean);
     procedure DataModuleCreate(Sender: TObject);
     procedure DataModuleDestroy(Sender: TObject);
-    procedure DataModuleExecute(Sender: TCustomDaemon);
+    //procedure DataModuleExecute(Sender: TCustomDaemon);
+    procedure DataModuleShutDown(Sender: TCustomDaemon);
     procedure DataModuleStart(Sender: TCustomDaemon; var OK: Boolean);
     procedure DataModuleStop(Sender: TCustomDaemon; var OK: Boolean);
   private
-    local_log: boolean;
-    //event_log: boolean;
-
-    cs, cs_evt: TCriticalSection;
-
     atol_cash_register_pipe: string;
 
     PipeComm: TPipeComm;
@@ -59,13 +55,17 @@ end;
 
 procedure TAtolKKTService.DataModuleStart(Sender: TCustomDaemon; var OK: Boolean);
 var ini: TIniFile;
+    local_log: boolean;
 begin
-  MyLogger.LogText('Служба запускается');
-
   ini := TIniFile.Create(ExtractFilePath(ParamStr(0))+'ini.ini');
 
   local_log := ini.ReadBool('Logs','LocalLog',True);
+  if (local_log) then
+    MyLogger.startLog();
+
   //event_log := ini.ReadBool('Logs','EventLog',True);
+
+  MyLogger.LogText('Служба запускается');
 
   atol_cash_register_pipe := ini.ReadString('Options','AtolCashRegisterPipe','');
 
@@ -78,12 +78,16 @@ begin
   MyLogger.LogText('pipe init is done');
 
   MyLogger.LogText('Служба запущена');
+  OK := true;
+  ReportStatus;
 end;
 
 procedure TAtolKKTService.DataModuleStop(Sender: TCustomDaemon; var OK: Boolean);
 begin
   ClosePipe;
-  MyLogger.LogText('pipe is closed');
+  MyLogger.LogText('pipe is closed (on stop)');
+  OK := true;
+  ReportStatus;
 end;
 
 procedure TAtolKKTService.ApplicationProperties1Exception(Sender: TObject; E: Exception);
@@ -102,25 +106,33 @@ procedure TAtolKKTService.DataModuleContinue(Sender: TCustomDaemon;
   var OK: Boolean);
 begin
   MyLogger.LogText('Служба возобновлена!');
+  OK := true;
+  ReportStatus;
 end;
 
 procedure TAtolKKTService.DataModuleCreate(Sender: TObject);
 begin
-  cs := TCriticalSection.Create;
-  cs_evt := TCriticalSection.Create;
+
 end;
 
 procedure TAtolKKTService.DataModuleDestroy(Sender: TObject);
 begin
-  cs.Free;
-  cs_evt.Free;
+
 end;
 
+{
 procedure TAtolKKTService.DataModuleExecute(Sender: TCustomDaemon);
 begin
   MyLogger.LogText('Служба запущена!');
 
   ReportStatus;
+end;
+}
+
+procedure TAtolKKTService.DataModuleShutDown(Sender: TCustomDaemon);
+begin
+  ClosePipe;
+  MyLogger.LogText('pipe is closed (on shutdown)');
 end;
 
 procedure TAtolKKTService.InitPipe;

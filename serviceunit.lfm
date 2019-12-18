@@ -5,7 +5,7 @@ object AtolKKTService: TAtolKKTService
   OnStart = DataModuleStart
   OnStop = DataModuleStop
   OnContinue = DataModuleContinue
-  OnExecute = DataModuleExecute
+  OnShutDown = DataModuleShutDown
   Height = 150
   HorizontalOffset = 320
   VerticalOffset = 130
